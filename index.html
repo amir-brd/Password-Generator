@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Test</h1>
+
+    <div class="container">
+        <h1>Generate a <br> <span>Random Password</span></h1>
+        <p>Never use an insecure password again !</p>
+        <button id="generate-btn">Generate Passwords</button>
+        <hr>
+        <div class="passwords">
+            <div class="password" id="first-password"></div>
+            <div class="password" id="last-password"></div>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
