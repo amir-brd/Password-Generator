@@ -13,14 +13,40 @@
     <div class="container">
         <h1>Generate a <br> <span>Random Password</span></h1>
         <p>Never use an insecure password again !</p>
+        <hr>
+        <label for="passwordsLength">Length :</label>
+        <input id="passwordsLength" type="number" min="8" placeholder="min length of a secure password is 8"/>
+
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="add-numbers">
+                <span class="slider round"></span>
+            </label>
+            <label class="password-content">Add Numbers</label>
+        </div>
+
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="add-symbols">
+                <span class="slider round"></span>
+            </label>
+            <label class="password-content">Add Symbols</label>
+        </div>
         <button id="generate-btn">Generate Passwords</button>
         <hr>
         <div class="passwords">
-            <div class="password" id="first-password"></div>
-            <div class="password" id="last-password"></div>
+            <div class="firstPassword">
+                <div class="password" id="first-password"></div>
+                <button class="copy-btn" id="copy-btn1"><i class="fa-regular fa-copy"></i></button>
+            </div>
+            <div class="lastPassword">
+                <div class="password" id="last-password"></div>
+                <button class="copy-btn" id="copy-btn2"><i class="fa-regular fa-copy"></i></button>
+            </div>
         </div>
     </div>
 
     <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/e02387e68e.js" crossorigin="anonymous"></script>
 </body>
 </html>

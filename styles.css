@@ -2,6 +2,7 @@ body{
     background-color: #092133;
     font-family: Karla, sans-serif;
     color: #fffade;
+    margin: 0;
 }
 
 h1{
@@ -16,12 +17,26 @@ span{
 .container{
     width: 450px;
     margin: auto;
-    padding: 70px 50px;
+    padding: 10px 30px;
+}
+
+#passwordsLength{
+    width: 280px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #009bf9;
+    background-color: #092133;
+    border: none;
+    border-bottom: 1px solid #33475c;
+}
+
+#passwordsLength{
+    outline: none;
 }
 
 #generate-btn{
-    margin-top: 50px;
-    margin-bottom: 35px;
+    display: block;
+    margin: 25px auto 0 auto;
     width: 200px;
     height: 50px;
     border: none;
@@ -41,7 +56,7 @@ span{
 
 .password{
     background-color: #33475c;
-    width: 200px;
+    width: 150px;
     height: 20px;
     text-align: center;
     border-radius: 8px;
@@ -50,3 +65,97 @@ span{
     font-size: larger;
 }
 
+.firstPassword, .lastPassword{
+    display: flex;
+    justify-content: space-around;
+}
+
+.copy-btn{
+    background-color: #092133;
+    border: none;
+    color: #33475c;
+    font-size: 25px;
+}
+
+.copy-btn:hover{
+    color: #009bf9;
+}
+
+
+
+hr{
+    background-color: #33475c;
+    height: 7px;
+    border: none;
+    margin: 30px auto;
+    scale: 1;
+}
+
+.switch {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle{
+    margin: 20px 0;
+    display: flex;
+}
+
+.password-content{
+    margin-top: 3px;
+}
