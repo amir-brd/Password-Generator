@@ -1,7 +1,7 @@
 ## **Password Generator**
 
 ## **Introduction**
-This mini project generates for you two random and secure passwords that you can use in your websites , you can choose length of passwords , you can also choose wether you want 
+Password Generator creates for you two random and secure passwords that you can use in your websites , you can choose length of passwords , you can also choose wether you want 
 to include numbers and special characters in your passwords , and you can copy your passwords in you clipboard
 
 ## **live deployment**
